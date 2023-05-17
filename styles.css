@@ -212,8 +212,7 @@ span {
 }
 
 #game-over {
-    background-image: url(/images/game-over.png);
+    background-image: url(/images/game-over.jpg);
     background-size: contain;
-    background-position: 50%;
     background-repeat: no-repeat;
 }
