@@ -75,7 +75,8 @@ span {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    
+    display: grid;
+    place-items: center;
 
 
 
@@ -212,13 +213,19 @@ span {
 }
 
 #game-over {
-    background-image: url(/images/game-over.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(/images/game-over-reminder-1432947_1920.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+
 }
 
-#you-won{
-    background-image: url(/images/win.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+#you-won {
+    background-image: url(/images/image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
 }
+

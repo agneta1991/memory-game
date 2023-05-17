@@ -85,8 +85,7 @@ cards.forEach(individualCard => {
                 setTimeout(() => {
                     document.getElementById('cards').style.display = 'none';
                     let endGame = document.getElementById('game-page');
-                    endGame.style.backgroundImage='none';
-                    endGame.style.background='black';
+                    endGame.style.backgroundImage = 'none';
                     let gameOver = document.createElement('div');
                     gameOver.id = 'game-over';
                     endGame.appendChild(gameOver);
@@ -140,13 +139,18 @@ cards.forEach(individualCard => {
             pair++;
             console.log(pair);
             if (pair === 7) {
-                document.getElementById('cards').style.display = 'none';
-                let endGame = document.getElementById('game-page');
-                let youWon = document.createElement('div');
-                youWon.id = 'you-won';
-                endGame.appendChild(youWon);
+                setTimeout(() => {
+                    document.getElementById('cards').style.display = 'none';
+                    let endGame = document.getElementById('game-page');
+                    endGame.style.backgroundImage = 'none';
+                    let youWon = document.createElement('div');
+                    youWon.id = 'you-won';
+                    
+                    endGame.appendChild(youWon);
+                }, 1000);
+
             }
-            
+
             let remov = document.querySelectorAll('button.pressed');
             remov.forEach(individualRemov => {
                 individualRemov.classList.add('lifeGone');
