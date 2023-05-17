@@ -211,6 +211,9 @@ span {
     opacity: 0;
 }
 
-.game-over {
+#game-over {
     background-image: url(/images/game-over.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }

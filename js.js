@@ -83,7 +83,11 @@ cards.forEach(individualCard => {
                 })
                 setTimeout(() => {
                     document.getElementById('cards').style.display = 'none';
-                }, 950);
+                    let endGame =document.getElementById('game-page');
+                    let gameOver = document.createElement('div');
+                    gameOver.id = 'game-over';
+                    endGame.appendChild(gameOver);
+                }, 1100);
             }
         }
     })
@@ -93,48 +97,49 @@ cards.forEach(individualCard => {
 cards.forEach(individualCard => {
     individualCard.addEventListener('click', function () {
 
-        if(clickCounter ===1){
-            first=individualCard.className;
+        if (clickCounter === 1) {
+            first = individualCard.className;
         }
-        if(clickCounter===2){
-            second=individualCard.className;
+        if (clickCounter === 2) {
+            second = individualCard.className;
         }
 
-console.log(first, second);
+        console.log(first, second);
 
-        if(clickCounter>2){
-            let closeCards=document.querySelectorAll('button.pressed');
-            closeCards.forEach(individual =>{
-                if (!(individual.className.includes('lifeGone'))){ 
-                individual.className='';
-                individual.classList.add('card');
-                clickCounter=0;
+        if (clickCounter > 2) {
+            let closeCards = document.querySelectorAll('button.pressed');
+            closeCards.forEach(individual => {
+                if (!(individual.className.includes('lifeGone'))) {
+                    individual.className = '';
+                    individual.classList.add('card');
+                    clickCounter = 0;
                 }
             }
             )
         }
 
-        if(clickCounter>=2){
+        if (clickCounter >= 2) {
             setTimeout(() => {
-                let closeCards=document.querySelectorAll('button.pressed'); 
-                closeCards.forEach(individual =>{
-                    if (!(individual.className.includes('lifeGone'))){
-                    individual.className='';
-                    individual.classList.add('card');
-                    clickCounter=0;
-                }}
+                let closeCards = document.querySelectorAll('button.pressed');
+                closeCards.forEach(individual => {
+                    if (!(individual.className.includes('lifeGone'))) {
+                        individual.className = '';
+                        individual.classList.add('card');
+                        clickCounter = 0;
+                    }
+                }
                 )
-            
+
             }, 3000);
         }
 
-        if (clickCounter===2 && first === second){
+        if (clickCounter === 2 && first === second) {
             let remov = document.querySelectorAll('button.pressed');
             remov.forEach(individualRemov => {
                 individualRemov.classList.add('lifeGone');
-                clickCounter=0;
+                clickCounter = 0;
             })
-           
+
         }
 
     })
