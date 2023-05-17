@@ -216,3 +216,9 @@ span {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#you-won{
+    background-image: url(/images/win.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
