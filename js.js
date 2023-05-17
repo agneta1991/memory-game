@@ -85,7 +85,7 @@ cards.forEach(individualCard => {
                 setTimeout(() => {
                     document.getElementById('cards').style.display = 'none';
                     let endGame = document.getElementById('game-page');
-                    endGame.style.backgroundImage = 'none';
+
                     let gameOver = document.createElement('div');
                     gameOver.id = 'game-over';
                     endGame.appendChild(gameOver);
@@ -142,7 +142,7 @@ cards.forEach(individualCard => {
                 setTimeout(() => {
                     document.getElementById('cards').style.display = 'none';
                     let endGame = document.getElementById('game-page');
-                    endGame.style.backgroundImage = 'none';
+
                     let youWon = document.createElement('div');
                     youWon.id = 'you-won';
                     
