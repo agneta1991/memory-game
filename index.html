@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Card game</title>
+</head>
+
+<body>
+    <script src="js.js" defer></script>
+    <nav class="nav-bar">
+        <ul>
+            <li class="nav-link"><a href="#rules-page">HOW TO PLAY </a></li>
+            <li class="nav-link"><a href="#game-page">GAME</a></li>
+            <li class="nav-link"></li>
+        </ul>
+    </nav>
+    <section id="welcome-page">
+        <p class="welcome">
+            ARE YOU READY TO PLAY A GAME?
+        </p>
+    </section>
+    <section id="rules-page">
+
+        <p class="rules">
+            <span>INSTRUCTIONS</span><br><br>
+            Memory card game is a fun and exciting game that can be played by people of all ages.
+            In this game, you need to flip over cards in an attempt to match pairs.
+            <span>However, there is a twist that you need to be aware of. </span>
+            If you flip a card and a joker is found, you lose a life.
+            You have just 2 lives, so try to remember where the joker is. if card of a Joker is pressed twice, it is a game over.<br><br>
+            Opened cards will be visable just 3 seconds, so don't rush but try memorising it as fast as you can.
+            This adds an extra layer of excitement to the game and encourages you to be strategic in your moves.
+            <br><br>
+            <span>GOOD LUCK!</span>
+
+        </p>
+    </section>
+    <section id="game-page">
+        <div id="cards">
+            <button class="card" value="0"></button>
+            <button class="card" value="1"></button>
+            <button class="card" value="2"></button>
+            <button class="card" value="3"></button>
+            <button class="card" value="4"></button>
+            <button class="card" value="5"></button>
+            <button class="card" value="6"></button>
+            <button class="card" value="7"></button>
+            <button class="card" value="8"></button>
+            <button class="card" value="9"></button>
+            <button class="card" value="10"></button>
+            <button class="card" value="11"></button>
+            <button class="card" value="12"></button>
+            <button class="card" value="13"></button>
+            <button class="card" value="14"></button>
+
+            
+            <div class="lives">
+
+                <img id="life-one" src="images/empty-heart.png">
+                <img id="life-two" src="images/empty-heart.png">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

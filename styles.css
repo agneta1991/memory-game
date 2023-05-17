@@ -1,0 +1,216 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+    background-color: black;
+}
+
+#welcome-page {
+    background-color: black;
+    height: 100vh;
+    background-image: url("images/cards1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 72px;
+    color: rgba(255, 255, 255, 0.438);
+    text-shadow: -4px -1px 0px rgba(0, 0, 0, 0.699);
+
+}
+
+
+
+.nav-bar>ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 120px;
+    font-size: 32px;
+}
+
+.nav-link>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.822);
+    text-shadow: -4px -1px 0px rgba(0, 0, 0, 0.699);
+}
+
+#rules-page {
+    background-color: black;
+    height: 100vh;
+    background-image: url("images/joker1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.rules {
+    opacity: 1;
+    padding: 10vh;
+    text-align: center;
+    width: 70vh;
+    color: white;
+    text-shadow: -4px -1px 0px rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+span {
+    text-shadow: -4px -1px 0px rgba(255, 0, 0, 0.678);
+    text-decoration: underline;
+}
+
+
+#game-page {
+    background-image: url(images/playing-cards-4074478.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+
+
+
+}
+
+#game-page>div {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    place-content: center;
+    column-gap: 2px;
+    row-gap: 20px;
+
+}
+
+.card {
+    opacity: 1;
+    background-image: url("images/cards2.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(238, 235, 235, 0.329);
+    width: 80px;
+    height: 130px;
+
+
+}
+
+.clubs {
+    background-image: url("images/ace-of-clubs11.jpg");
+    background-size: cover;
+    background-position: center;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(238, 235, 235, 0.329);
+    width: 80px;
+    height: 130px;
+}
+
+.spades {
+    background-image: url("images/ace-of-spades1.jpg");
+    background-size: contain;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(238, 235, 235, 0.329);
+    width: 80px;
+    height: 130px;
+
+}
+
+.hearts {
+    background-image: url("images/ace-of-hearts1.jpg");
+    background-size: contain;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(238, 235, 235, 0.329);
+    width: 80px;
+    height: 130px;
+}
+
+.diamonds {
+    background-image: url("images/ace-of-diamonds1.jpg");
+    background-size: contain;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(238, 235, 235, 0.329);
+    width: 80px;
+    height: 130px;
+
+}
+
+.joker {
+    background-image: url("images/joker.jpg");
+    background-position: center;
+    background-size: cover;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(255, 0, 0, 0.651);
+    width: 80px;
+    height: 130px;
+
+}
+
+.remove {
+    background-color: rgba(0, 0, 0, 0.068);
+    background-size: contain;
+    border: solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 10px 10px 25px rgba(255, 0, 0, 0.521);
+    width: 80px;
+    height: 110px;
+}
+
+
+.lives {
+    grid-column-start: span 5;
+    justify-self: center;
+}
+
+.lives>img {
+    width: 110px;
+    box-shadow: 10px 10px 25px rgba(255, 0, 0, 0.116);
+    border-radius: 40px;
+    padding: 6px;
+    padding-top: 50px;
+
+}
+
+.lifeGone,
+.lifeGonetwo {
+
+    animation: fadeOut 2s;
+    -webkit-animation: fadeOut 2s;
+    -moz-animation: fadeOut 2s;
+    -o-animation: fadeOut 2s;
+    -ms-animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.lifeGone {
+    opacity: 0;
+}
+
+.game-over {
+    background-image: url(/images/game-over.png);
+}
