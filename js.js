@@ -87,7 +87,7 @@ cards.forEach(individualCard => {
                     let endGame = document.getElementById('game-page');
 
                     let gameOver = document.createElement('div');
-                    gameOver.id = 'game-over';
+                    gameOver.className = 'game-over';
                     endGame.appendChild(gameOver);
                 }, 1100);
             }
@@ -144,7 +144,7 @@ cards.forEach(individualCard => {
                     let endGame = document.getElementById('game-page');
 
                     let youWon = document.createElement('div');
-                    youWon.id = 'you-won';
+                    youWon.className = 'you-won';
                     
                     endGame.appendChild(youWon);
                 }, 1000);

@@ -218,18 +218,20 @@ span {
     opacity: 0;
 }
 
-#game-over {
+.game-over {
     background-image: url(/images/game-over.jpg);
-    background-size: cover;
+    background-size: 78%;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
 
 
 }
 
-#you-won {
-    background-image: url(/images/win.jpg);
-    background-size: cover;
+.you-won {
+    background-image: url(/images/you-won.jpg);
+    background-size: 78%;
+    background-repeat: no-repeat;
     background-position: center;
     position: relative;
 
