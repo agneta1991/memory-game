@@ -219,7 +219,7 @@ span {
 }
 
 .game-over {
-    background-image: url(/images/game-over.jpg);
+    background-image: url("images/game-over.jpg");
     background-size: 78%;
     background-repeat: no-repeat;
     background-position: center;
@@ -229,7 +229,7 @@ span {
 }
 
 .you-won {
-    background-image: url(/images/you-won.jpg);
+    background-image: url("images/you-won.jpg");
     background-size: 78%;
     background-repeat: no-repeat;
     background-position: center;
